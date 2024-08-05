@@ -50,6 +50,72 @@ Our API allows developers to easily integrate Shona language processing into the
 - Developing educational tools for Shona language learners
 - Powering recommendation systems for Shona-language e-commerce platforms
 
+## API Documentation
+
+The Zvirevo API is accessible at: `[https://word2vec-app-tk6uqeiatq-uc.a.run.app/](https://word2vec-app-tk6uqeiatq-uc.a.run.app/)`
+
+### Endpoints
+
+1. Word Similarity
+   - Endpoint: `/word-similarity`
+   - Method: POST
+   - Request Body:
+     ```json
+     {
+       "word1": "string",
+       "word2": "string"
+     }
+     ```
+   - Response:
+     ```json
+     {
+       "similarity": float
+     }
+     ```
+
+2. Word Analogy
+   - Endpoint: `/word-analogy`
+   - Method: POST
+   - Request Body:
+     ```json
+     {
+       "word1": "string",
+       "word2": "string",
+       "word3": "string"
+     }
+     ```
+   - Response:
+     ```json
+     {
+       "result": "string"
+     }
+     ```
+
+### Example Usage
+
+Using Python with the `requests` library:
+
+```python
+import requests
+
+API_URL = "[https://word2vec-app-tk6uqeiatq-uc.a.run.app](https://word2vec-app-tk6uqeiatq-uc.a.run.app/)"
+
+# Word Similarity
+similarity_response = requests.post(f"{API_URL}/word-similarity", json={
+    "word1": "murume",
+    "word2": "mukadzi"
+})
+print(similarity_response.json())
+
+# Word Analogy
+analogy_response = requests.post(f"{API_URL}/word-analogy", json={
+    "word1": "mambo",
+    "word2": "murume",
+    "word3": "mukadzi"
+})
+print(analogy_response.json())
+```
+
 ## Installation and Setup
 
 ### Prerequisites
@@ -63,7 +129,7 @@ Our API allows developers to easily integrate Shona language processing into the
 
 1. Clone the repository:
    ```
-   git clone https://github.com/your-username/zvirevo.git
+   git clone https://github.com/your-username/zvirevo_word-embeddings.git
    cd zvirevo
    ```
 
@@ -103,10 +169,6 @@ The application should now be running on `http://localhost:5000`.
    ```
 
 Follow the prompts to complete the deployment. Once finished, Google Cloud Run will provide a URL where your application is accessible.
-
-## API Documentation
-
-[Include details about your API endpoints, request/response formats, and example usage here]
 
 ## Future Directions
 
