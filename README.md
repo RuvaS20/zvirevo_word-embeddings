@@ -62,13 +62,13 @@ The Zvirevo API is accessible at: `https://word2vec-app-tk6uqeiatq-uc.a.run.app/
    - Request Body:
      ```json
      {
-       "word": "baba",
+       "word": "baba"
      }
      ```
    - Response:
      ```json
      {
-       "similar words: [["tete", 0.83], ["vamwene", 0.81]]"
+       "similar words": "[["tete", 0.83], ["vamwene", 0.81]]"
      }
      ```
 
@@ -178,6 +178,6 @@ We welcome contributions! Email us at daisykudzaitsenesa@gmail.com and ruvarashe
 
 ## License
 
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+This project is licensed under the MIT License - see the [LICENSE](https://github.com/RuvaS20/zvirevo_word-embeddings/blob/main/GCP%20Deployment/LICENSE) file for details.
 
 Join us in our mission to bring the Shona language into the digital age!
