@@ -2,7 +2,8 @@
 
 Zvirevo is a project aimed at bridging the digital divide for Shona speakers through advanced natural language processing techniques. We've developed word embeddings for the Shona language using Word2Vec and FastText models, enabling powerful word similarity and analogy calculations.
 
-![image](https://github.com/user-attachments/assets/f232ea86-eb92-47bb-87a5-a6eeae34870c)
+![image](https://github.com/user-attachments/assets/7b4f953b-bb3f-4cbd-80d3-970323d11758)
+
 
 
 ## Creators
@@ -172,6 +173,131 @@ The application should now be running on `http://localhost:5000`.
    ```
 
 Follow the prompts to complete the deployment. Once finished, Google Cloud Run will provide a URL where your application is accessible.
+
+
+## Flask App Documentation
+
+
+### Features
+
+- Retrieve similar words using Word2Vec or FastText models.
+- Compute word relationships based on provided expressions.
+- Send email notifications via a contact form.
+
+### Installation
+
+1. **Clone the repository:**
+   ```bash
+   git clone https://github.com/yourusername/your-repo-name.git
+   cd your-repo-name
+   ```
+
+2. **Create and activate a virtual environment:**
+   ```bash
+   python3 -m venv venv
+   source venv/bin/activate  # On Windows, use `venv\Scripts\activate`
+   ```
+
+3. **Install the dependencies:**
+   ```bash
+   pip install -r requirements.txt
+   ```
+
+4. **Download and place your pre-trained models:**
+   - Place your Word2Vec model (`w2v_shona2.model`) and FastText model (`ft_model1.model`) in the project directory.
+
+5. **Configure Flask-Mail:**
+   - Update the email configuration in the `app.py` file with your email credentials.
+
+### Usage
+
+1. **Run the Flask app:**
+   ```bash
+   flask run
+   ```
+
+2. **Open your browser and navigate to:**
+   ```
+   http://127.0.0.1:5000
+   ```
+
+### Endpoints
+
+#### Home
+
+- **URL:** `/`
+- **Method:** `GET`
+- **Description:** Renders the home page.
+
+#### Get Similar Words
+
+- **URL:** `/get_similar_words`
+- **Method:** `POST`
+- **Description:** Retrieves similar words using the selected model.
+- **Request Body:**
+  ```json
+  {
+    "word": "example",
+    "model_type": "word2vec",
+    "top_n": 10
+  }
+  ```
+- **Response:**
+  ```json
+  {
+    "similar_words": [["word1", 0.85], ["word2", 0.80], ...]
+  }
+  ```
+
+#### Compute Word Relationships
+
+- **URL:** `/compute`
+- **Method:** `POST`
+- **Description:** Computes word relationships based on provided expressions.
+- **Request Body:**
+  ```json
+  {
+    "expression": "mwana - vakomana + vasikana",
+    "model": "word2vec",
+    "top_n": 5
+  }
+  ```
+- **Response:**
+  ```json
+  {
+    "result": [{"word": "mukadzi", "similarity": 0.85}, ...]
+  }
+  ```
+
+#### Submit Contact Form
+
+- **URL:** `/submit`
+- **Method:** `POST`
+- **Description:** Sends an email notification with the contact form details.
+- **Form Data:**
+  - `name`
+  - `email`
+  - `message`
+  - `subscribe`
+- **Response:**
+  ```json
+  {
+    "status": "success",
+    "message": "Your message has been received and the email has been sent!"
+  }
+  ```
+
+### Configuration
+
+- **Email Configuration:** Update the email server, port, username, and password in the `app.py` file.
+
+### Dependencies
+
+- Flask
+- Gensim
+- Flask-Mail
+- Numpy
+
 
 ## Future Directions
 
