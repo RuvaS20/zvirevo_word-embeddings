@@ -1,5 +1,7 @@
 ## Video Demo:
 [https://www.youtube.com/results?search_query=zvirevo+project]
+[![Watch the video](https://img.youtube.com/vi/9ac5bFShFaE/maxresdefault.jpg)](https://youtu.be/9ac5bFShFaE)
+https://youtu.be/9ac5bFShFaE
 
 
 # Zvirevo: Shona Language Word Embeddings
