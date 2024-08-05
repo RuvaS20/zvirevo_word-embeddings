@@ -188,7 +188,7 @@ Follow the prompts to complete the deployment. Once finished, Google Cloud Run w
 1. **Clone the repository:**
    ```bash
    git lfs install
-   git clone [https://huggingface.co/yourusername/your-repo-name](https://huggingface.co/dkt-py-bot/zvirevo_word2vec)
+   git clone [(https://huggingface.co/dkt-py-bot/zvirevo_word2vec)]
    cd zvirevo_word2vec
    ```
 
