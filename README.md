@@ -52,24 +52,23 @@ Our API allows developers to easily integrate Shona language processing into the
 
 ## API Documentation
 
-The Zvirevo API is accessible at: `[https://word2vec-app-tk6uqeiatq-uc.a.run.app/](https://word2vec-app-tk6uqeiatq-uc.a.run.app/)`
+The Zvirevo API is accessible at: `https://word2vec-app-tk6uqeiatq-uc.a.run.app/`
 
 ### Endpoints
 
 1. Word Similarity
-   - Endpoint: `/word-similarity`
+   - Endpoint: `/similar`
    - Method: POST
    - Request Body:
      ```json
      {
-       "word1": "string",
-       "word2": "string"
+       "word": "baba",
      }
      ```
    - Response:
      ```json
      {
-       "similarity": float
+       "similar words: [["tete", 0.83], ["vamwene", 0.81]]
      }
      ```
 
@@ -79,15 +78,15 @@ The Zvirevo API is accessible at: `[https://word2vec-app-tk6uqeiatq-uc.a.run.app
    - Request Body:
      ```json
      {
-       "word1": "string",
-       "word2": "string",
-       "word3": "string"
+       "word1": "mambo",
+       "word2": "murume",
+       "word3": "mukadzi"
      }
      ```
    - Response:
      ```json
      {
-       "result": "string"
+       "result": "mambokadzi"
      }
      ```
 
@@ -98,12 +97,11 @@ Using Python with the `requests` library:
 ```python
 import requests
 
-API_URL = "[https://word2vec-app-tk6uqeiatq-uc.a.run.app](https://word2vec-app-tk6uqeiatq-uc.a.run.app/)"
+API_URL = "https://word2vec-app-tk6uqeiatq-uc.a.run.app/"
 
 # Word Similarity
-similarity_response = requests.post(f"{API_URL}/word-similarity", json={
-    "word1": "murume",
-    "word2": "mukadzi"
+similarity_response = requests.post(f"{API_URL}/similar", json={
+    "word": "murume"
 })
 print(similarity_response.json())
 
@@ -155,17 +153,17 @@ The application should now be running on `http://localhost:5000`.
 
 1. Build the Docker image:
    ```
-   docker build -t gcr.io/[PROJECT-ID]/zvirevo .
+   docker build -t gcr.io/main-duality-431514-n3/word2vec-app .
    ```
 
 2. Push the image to Google Container Registry:
    ```
-   docker push gcr.io/[PROJECT-ID]/zvirevo
+   docker push gcr.io/main-duality-431514-n3/word2vec-app
    ```
 
 3. Deploy to Cloud Run:
    ```
-   gcloud run deploy --image gcr.io/[PROJECT-ID]/zvirevo --platform managed
+   gcloud run deploy --image gcr.io/main-duality-431514-n3/word2vec-app --platform managed
    ```
 
 Follow the prompts to complete the deployment. Once finished, Google Cloud Run will provide a URL where your application is accessible.
