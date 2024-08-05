@@ -2,6 +2,9 @@
 
 Zvirevo is a project aimed at bridging the digital divide for Shona speakers through advanced natural language processing techniques. We've developed word embeddings for the Shona language using Word2Vec and FastText models, enabling powerful word similarity and analogy calculations.
 
+![image](https://github.com/user-attachments/assets/f232ea86-eb92-47bb-87a5-a6eeae34870c)
+
+
 ## Creators
 
 This project was developed by:
@@ -49,6 +52,8 @@ Our API allows developers to easily integrate Shona language processing into the
 - Enhancing machine translation systems
 - Developing educational tools for Shona language learners
 - Powering recommendation systems for Shona-language e-commerce platforms
+
+
 
 ## API Documentation
 
