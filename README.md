@@ -68,7 +68,7 @@ The Zvirevo API is accessible at: `https://word2vec-app-tk6uqeiatq-uc.a.run.app/
    - Response:
      ```json
      {
-       "similar words: [["tete", 0.83], ["vamwene", 0.81]]
+       "similar words: [["tete", 0.83], ["vamwene", 0.81]]"
      }
      ```
 
