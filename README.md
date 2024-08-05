@@ -29,11 +29,11 @@ This video showcases the capabilities of our Shona word embeddings and how to us
 
 Our word embeddings were trained on a corpus of Shona text collected from various sources:
 
-1. [Shona Bible](Duramazwi): A comprehensive source of formal Shona text.
+1. Shona Dictionary: A comprehensive source of formal Shona text.
 2. [Shona Language Corpus](https://wortschatz.uni-leipzig.de/en/download/Shona#sna-zw_web_2016): Kwayedza news articles and randomly chosen websites covering a wide range of topics in Shona.
 3. [Belebele Dataset](https://paperswithcode.com/dataset/belebele): A multiple-choice machine reading comprehension (MRC) dataset spanning 122 language variants.
-4. [VOA News]: A collection of Shona news articles and short stories.
-5. [Shona Quran]
+4. VOA News: A collection of Shona news articles and short stories.
+5. Shona Bible and Quran
 
 We are grateful to these sources for providing the rich textual data necessary for training our models.
 
@@ -110,11 +110,11 @@ Follow the prompts to complete the deployment. Once finished, Google Cloud Run w
 
 ## Future Directions
 
-While currently focused on word embeddings, we envision Zvirevo as a stepping stone towards more complex NLP tasks in Shona, including sentiment analysis, named entity recognition, and eventually, full-fledged conversational AI.
+While currently focused on word embeddings, we envision Zvirevo as a stepping stone towards more complex NLP tasks in Shona, including sentiment analysis, named entity recognition, and, eventually, full-fledged conversational AI.
 
 ## Contributing
 
-We welcome contributions! Please see our [Contributing Guidelines](CONTRIBUTING.md) for more details.
+We welcome contributions! Email us at daisykudzaitsenesa@gmail.com and ruvarashe.sadya@gmail.com for Daisy and Ruvarashe, respectively.
 
 ## License
 
