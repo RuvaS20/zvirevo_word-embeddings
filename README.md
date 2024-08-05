@@ -1,7 +1,7 @@
-## Video Demo:
+# Video Demo: Click on the image
 
 [![Watch the video](https://img.youtube.com/vi/9ac5bFShFaE/maxresdefault.jpg)](https://youtu.be/9ac5bFShFaE)
-Click on the image
+
 
 
 # Zvirevo: Shona Language Word Embeddings
