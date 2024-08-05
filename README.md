@@ -27,7 +27,7 @@ This project was developed by:
 
 Check out our video demonstration to see Zvirevo in action:
 
-[Zvirevo Demo Video]([https://www.youtube.com/watch?v=your-video-id](https://youtu.be/9ac5bFShFaE))
+[![Zvirevo Demo Video](https://img.youtube.com/vi/9ac5bFShFaE/maxresdefault.jp)](https://youtu.be/9ac5bFShFaE)
 
 This video showcases the capabilities of our Shona word embeddings and how to use the API.
 
