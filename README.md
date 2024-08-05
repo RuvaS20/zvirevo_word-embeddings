@@ -188,7 +188,8 @@ Follow the prompts to complete the deployment. Once finished, Google Cloud Run w
 
 1. **Clone the repository:**
    ```bash
-   git clone https://github.com/yourusername/your-repo-name.git
+   git lfs install
+   git clone https://huggingface.co/yourusername/your-repo-name
    cd your-repo-name
    ```
 
