@@ -9,14 +9,12 @@ This project was developed by:
 - **Daisy Tsenesa**
 - **Ruvarashe Sadya**
 
-We appreciate their hard work and dedication in bringing Shona language processing to the forefront of NLP technology.
-
 ## Key Features
 
 - Word embeddings for the Shona language
 - Trained using Word2Vec and FastText algorithms
 - Supports word similarity calculations
-- Enables analogy computations (e.g., "man" is to "woman" as "king" is to "queen")
+- Enables analogy computations (e.g., "mambo" - "murume" + "mukadzi" = "mambokadzi")
 - API deployed on Google Cloud Run for easy integration
 
 ## Demo
@@ -31,10 +29,11 @@ This video showcases the capabilities of our Shona word embeddings and how to us
 
 Our word embeddings were trained on a corpus of Shona text collected from various sources:
 
-1. [Shona Bible](https://www.bible.com/versions/1940-shona-bible): A comprehensive source of formal Shona text.
-2. [Shona Wikipedia](https://sn.wikipedia.org/wiki/Peji_Rekutanga): Articles covering a wide range of topics in Shona.
-3. [Shona News Websites](https://www.herald.co.zw/category/shona/): Contemporary Shona language usage from news articles.
-4. [Shona Literature](https://muzvare.com/shona-literature/): A collection of Shona novels and short stories.
+1. [Shona Bible](Duramazwi): A comprehensive source of formal Shona text.
+2. [Shona Language Corpus](https://wortschatz.uni-leipzig.de/en/download/Shona#sna-zw_web_2016): Kwayedza news articles and randomly chosen websites covering a wide range of topics in Shona.
+3. [Belebele Dataset](https://paperswithcode.com/dataset/belebele): A multiple-choice machine reading comprehension (MRC) dataset spanning 122 language variants.
+4. [VOA News]: A collection of Shona news articles and short stories.
+5. [Shona Quran]
 
 We are grateful to these sources for providing the rich textual data necessary for training our models.
 
