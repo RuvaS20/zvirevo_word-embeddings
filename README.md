@@ -2,6 +2,15 @@
 
 Zvirevo is a project aimed at bridging the digital divide for Shona speakers through advanced natural language processing techniques. We've developed word embeddings for the Shona language using Word2Vec and FastText models, enabling powerful word similarity and analogy calculations.
 
+## Creators
+
+This project was developed by:
+
+- **Daisy Tsenesa**
+- **Ruvarashe Sadya**
+
+We appreciate their hard work and dedication in bringing Shona language processing to the forefront of NLP technology.
+
 ## Key Features
 
 - Word embeddings for the Shona language
@@ -9,6 +18,25 @@ Zvirevo is a project aimed at bridging the digital divide for Shona speakers thr
 - Supports word similarity calculations
 - Enables analogy computations (e.g., "man" is to "woman" as "king" is to "queen")
 - API deployed on Google Cloud Run for easy integration
+
+## Demo
+
+Check out our video demonstration to see Zvirevo in action:
+
+[Zvirevo Demo Video](https://www.youtube.com/watch?v=your-video-id)
+
+This video showcases the capabilities of our Shona word embeddings and how to use the API.
+
+## Data Sources
+
+Our word embeddings were trained on a corpus of Shona text collected from various sources:
+
+1. [Shona Bible](https://www.bible.com/versions/1940-shona-bible): A comprehensive source of formal Shona text.
+2. [Shona Wikipedia](https://sn.wikipedia.org/wiki/Peji_Rekutanga): Articles covering a wide range of topics in Shona.
+3. [Shona News Websites](https://www.herald.co.zw/category/shona/): Contemporary Shona language usage from news articles.
+4. [Shona Literature](https://muzvare.com/shona-literature/): A collection of Shona novels and short stories.
+
+We are grateful to these sources for providing the rich textual data necessary for training our models.
 
 ## Why Zvirevo?
 
